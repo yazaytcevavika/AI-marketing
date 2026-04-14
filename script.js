@@ -1,6 +1,20 @@
-// Ваши данные Telegram (Токен бота и ваш личный ID)
-const TG_TOKEN = '8714638517:AAHMPaWQbhVc1vEiPUclrO9-RjvootMfIvU';
-const TG_CHAT_ID = '911797742';
+// Безопасная ссылка на ваш Webhook в Make.com
+const WEBHOOK_URL = 'https://hook.us2.make.com/zcc4djp7m0yiry2iy67lb7x4liu7tb4g';
+
+async function sendToTelegram(text) {
+    try {
+        const response = await fetch(WEBHOOK_URL, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            // Отправляем данные в формате JSON, который легко прочитает Make.com
+            body: JSON.stringify({ message: text })
+        });
+        return response.ok;
+    } catch (error) {
+        console.error('Ошибка отправки:', error);
+        return false;
+    }
+}
 
 // Универсальная функция отправки в Telegram
 async function sendToTelegram(text) {
