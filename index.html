@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виктория Зайцева | Интеллектуальный маркетинг</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>МАРКЕТИНГ БЕЗ ШТАТА</h1>
+                <h3>Стратегия. Экономика. Нейросети.</h3>
+                <p>Я Виктория Зайцева, маркетолог с MBA. Помогаю владельцам бизнеса внедрить ИИ-инструменты, чтобы навсегда забыть о текучке кадров и неконтролируемых расходах на подрядчиков.</p>
+                <a href="#contacts" class="btn btn-primary">Получить ИИ-Аудит</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder portrait">Фото (3:4)</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="logic bg-light" id="approach">
+        <div class="container">
+            <h2>Почему мой подход работает на ваши цифры?</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Логика MBA</h3>
+                    <p>Я не предлагаю случайных идей. Я строю систему, где каждое действие работает на общую стратегию развития вашего бизнеса.</p>
+                </div>
+                <div class="card">
+                    <h3>Расчет юнит-экономики</h3>
+                    <p>Я считаю реальную прибыль и окупаемость каждого клиента, а не количество лайков.</p>
+                </div>
+                <div class="card">
+                    <h3>Технологии ИИ</h3>
+                    <p>Я автоматизирую рутину. Вы получаете контент премиального уровня в 10 раз быстрее и дешевле штатных специалистов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="service-row">
+                <div class="service-info">
+                    <h2>ИИ-АКТИВ: Автономная система вашего бренда</h2>
+                    <p>Надоело зависеть от капризов дизайнеров и ждать тексты неделями? ИИ-Актив — это «цифровой мозг» вашего маркетинга, который остается у вас навсегда.</p>
+                    <ul>
+                        <li><strong>Визуальный стандарт:</strong> Логотип и Мастер-промпты для фото-контента.</li>
+                        <li><strong>Голос бренда:</strong> Настройка вашего уникального Tone of Voice.</li>
+                        <li><strong>Стратегический модуль:</strong> Готовые промпты для сегментации и CJM.</li>
+                    </ul>
+                    <a href="#contacts" class="btn btn-outline">Заказать ИИ-Актив</a>
+                </div>
+            </div>
+            <div class="service-row reverse">
+                <div class="service-info">
+                    <h2>ПРАКТИКУМ «Маркетинг без штата»</h2>
+                    <p>Живой интенсив, где я передаю свои инструменты «под ключ». Вы научитесь управлять нейросетями и тратить на маркетинг не более 30 минут в день.</p>
+                    <a href="#contacts" class="btn btn-outline">Узнать даты интенсива</a>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-info">
+                    <h2>Ваш внешний консультант</h2>
+                    <p>Глубокая аналитика рынка, расчет экономики и внедрение ИИ-агентов под моим надзором. Для тех, кто хочет видеть результат в деньгах, а не в отчетах.</p>
+                    <a href="#contacts" class="btn btn-outline">Записаться на консультацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases bg-light" id="cases">
+        <div class="container">
+            <h2>Кейсы</h2>
+            <div class="grid-3">
+                <div class="image-placeholder portrait shadow-deep">Проект 1</div>
+                <div class="image-placeholder portrait shadow-deep">Проект 2</div>
+                <div class="image-placeholder portrait shadow-deep">Проект 3</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lead-magnet" id="guide">
+        <div class="container text-center">
+            <h2>ГАЙД: 5 процессов, которые ИИ заменит в вашем бизнесе уже сегодня.</h2>
+            <div id="guide-form-container" class="form-narrow">
+                <input type="email" id="guide-email" placeholder="Ваш Email" required>
+                <button class="btn btn-primary" onclick="getGuide()">Скачать бесплатно</button>
+            </div>
+            <div id="guide-success" style="display: none;">
+                <p>Отлично! Гайд готов к загрузке.</p>
+                <a href="assets/guide.pdf" target="_blank" class="btn btn-primary">Открыть PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2>Блог</h2>
+            <div id="blog-content" class="blog-container">
+                <p>Загрузка последней статьи...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq bg-light" id="faq">
+        <div class="container">
+            <h2>Частые вопросы</h2>
+            <div class="faq-item">
+                <h4>«Я не технарь, я не справлюсь с нейросетями».</h4>
+                <p>Вам не нужно учиться программировать. Вы получаете готовые рабочие промпты. Всё, что нужно — скопировать мой текст и вставить в чат.</p>
+            </div>
+            <div class="faq-item">
+                <h4>«ИИ пишет сухие и бездушные тексты».</h4>
+                <p>Только если использовать стандартные запросы. В «ИИ-Активе» мы настраиваем ваш личный «Голос бренда».</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contacts">
+        <div class="container text-center">
+            <h2>Обсудим ваш бизнес?</h2>
+            <form id="contact-form" class="form-narrow">
+                <input type="text" id="contact-name" placeholder="Имя" required>
+                <input type="tel" id="contact-phone" placeholder="Телефон" required>
+                <input type="text" id="contact-niche" placeholder="Ниша" required>
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            </form>
+            <div id="contact-success" style="display:none;"><p>Заявка отправлена! Я свяжусь с вами в ближайшее время.</p></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>Виктория Зайцева © 2026. Интеллектуальный маркетинг.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
